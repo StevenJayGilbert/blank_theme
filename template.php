@@ -88,6 +88,7 @@ function STARTERKIT_preprocess(&$vars, $hook) {
 }
 // */
 
+
 /**
  * Override or insert variables into the page templates.
  *
@@ -96,12 +97,22 @@ function STARTERKIT_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+function blank_preprocess_page(&$vars, $hook) {
+  //$vars['sample_variable'] = t('Lorem ipsum.');
 
-  // To remove a class from $classes_array, use array_diff().
-  //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
+  $args = arg();
+  
+  if ($vars['node']->title == 'Practitioner Sales page') {
+    $path = drupal_get_path('theme', 'blank');
+    drupal_add_js($path .'/js/jcountdown/jquery.jcountdown.min.js');
+    drupal_add_css($path . '/js/jcountdown/jcountdown.css', 'theme');
+    drupal_add_css($path . '/css/practitioner-sales-page.css', 'theme');
+    $vars['scripts'] = drupal_get_js();
+    $vars['styles'] = drupal_get_css($css);    
+  }
+    
+  //Don't display the page title 
+  unset($vars['title']);  
 }
 // */
 

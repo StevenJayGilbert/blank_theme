@@ -118,10 +118,6 @@
 </head>
 <body class="<?php print $classes; ?>">
 
-  <?php if ($primary_links): ?>
-    <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
-  <?php endif; ?>
-
   <div id="page-wrapper"><div id="page">
 
     <div id="header"><div class="section clearfix">

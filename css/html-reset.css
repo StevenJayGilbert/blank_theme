@@ -74,10 +74,12 @@ fieldset {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 
    */
 
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+   font-family: 'PT Sans', sans-serif;
+
 }
 
 pre,
