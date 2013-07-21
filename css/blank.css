@@ -130,3 +130,9 @@ a.button:hover,
   background: linear-gradient(to bottom,  #ff9900 0%,#d57f00 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#d57f00',GradientType=0 ); /* IE6-9 */
 }
+
+/* contact form */
+#contact-mail-user {
+  margin: 2em;
+  max-width: 600px;
+}
