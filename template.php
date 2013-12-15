@@ -101,6 +101,9 @@ function blank_preprocess_page(&$vars, $hook) {
   //$vars['sample_variable'] = t('Lorem ipsum.');
 
   $args = arg();
+  $shadowbox_path = libraries_get_path('shadowbox');
+  drupal_add_css($shadowbox_path. '/shadowbox.css');
+  drupal_add_js($shadowbox_path. '/shadowbox.js');
   
   if ($vars['node']->title == 'Practitioner Sales page') {
     $path = drupal_get_path('theme', 'blank');
