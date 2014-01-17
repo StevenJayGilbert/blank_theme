@@ -105,16 +105,21 @@ function blank_preprocess_page(&$vars, $hook) {
   drupal_add_css($shadowbox_path. '/shadowbox.css');
   drupal_add_js($shadowbox_path. '/shadowbox.js');
   
+  $colorbox_path = libraries_get_path('colorbox');
+  drupal_add_css($colorbox_path. '/example1/colorbox.css');
+  drupal_add_js($colorbox_path. '/jquery.colorbox-min.js');  
+  
   if ($vars['node']->title == 'Practitioner Sales page') {
     $path = drupal_get_path('theme', 'blank');
     drupal_add_js($path .'/js/jcountdown/jquery.jcountdown.min.js');
     drupal_add_css($path . '/js/jcountdown/jcountdown.css', 'theme');
     drupal_add_css($path . '/css/practitioner-sales-page.css', 'theme');
-    $vars['scripts'] = drupal_get_js();
-    $vars['styles'] = drupal_get_css($css);    
   }
     
-  //Don't display the page title 
+  $vars['scripts'] = drupal_get_js();
+  $vars['styles'] = drupal_get_css($css);      
+  
+  //Don't display the page title   
   unset($vars['title']);  
 }
 // */
