@@ -106,7 +106,7 @@ function blank_preprocess_page(&$vars, $hook) {
   drupal_add_js($shadowbox_path. '/shadowbox.js');
   
   $colorbox_path = libraries_get_path('colorbox');
-  drupal_add_css($colorbox_path. '/example1/colorbox.css');
+  drupal_add_css($colorbox_path. '/example4/colorbox.css');
   drupal_add_js($colorbox_path. '/jquery.colorbox-min.js');  
   
   if ($vars['node']->title == 'Practitioner Sales page') {
@@ -121,7 +121,36 @@ function blank_preprocess_page(&$vars, $hook) {
   
   //Don't display the page title   
   unset($vars['title']);  
+  $vars['classes'] .= ' '. grs_get_path();
 }
+
+function blank_clean_css_identifier($identifier, $filter = array(' ' => '-', '_' => '-', '/' => '-', '[' => '-', ']' => '')) {
+  // By default, we filter using Drupal's coding standards.
+  $identifier = strtr($identifier, $filter);
+
+  // Valid characters in a CSS identifier are:
+  // - the hyphen (U+002D)
+  // - a-z (U+0030 - U+0039)
+  // - A-Z (U+0041 - U+005A)
+  // - the underscore (U+005F)
+  // - 0-9 (U+0061 - U+007A)
+  // - ISO 10646 characters U+00A1 and higher
+  // We strip out any character not in the above list.
+  $identifier = preg_replace('/[^\x{002D}\x{0030}-\x{0039}\x{0041}-\x{005A}\x{005F}\x{0061}-\x{007A}\x{00A1}-\x{FFFF}]/u', '', $identifier);
+
+  return $identifier;
+}
+
+/*
+*   Globe Runner SEO = GRS
+*   Use your own namespace if you'd like!
+*  
+*   @return String - Provides you with a clean url
+*/
+function grs_get_path() {
+    return strtolower( preg_replace( '/[^a-zA-Z0-9-]+/', '-', drupal_get_path_alias( $_GET['q'] ) ) );
+}
+
 // */
 
 /**
@@ -172,3 +201,5 @@ function STARTERKIT_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+
