@@ -124,7 +124,7 @@ p, li, span, div{
 	font-size:45px; font-style:italic; font-weight:bold; color:#EC8E39;
 }
 .span_7{
-	font-size:40px; color:#A9BE52; font-weight:bold;
+	font-size:40px; color:#A9BE52; font-weight:bold; line-height: 1.2em;
 }
 .BeVitality .desc_12{
 	color:#fff; margin-top:20px;
