@@ -11,20 +11,13 @@
   visibility: hidden;
 }
 
-body{
-	padding:0px;
-	margin:0px;
-  font-family: 'Open Sans', sans-serif;
-	background-color:#fff;
-}
-
 .content{
   position: relative;
 }
-p{
-  font-size: 15px;
-  line-height: 1.6em;
+p, li, span, div{
+  line-height: 1.7em;
 }
+
 .logo_main {
   width: 1000px;
   margin: 0 auto;
@@ -243,9 +236,13 @@ p{
 }
 .span_1{
 	font-size:24px; font-weight:bolder; color:#C5EA3A;
+  line-height: 34px;
 }
 .span_2{
+  display: block;
 	font-size:15px;color:#fff;font-weight: 600;
+  margin-top: 15px;
+  line-height: 23px;
 }
 
 
