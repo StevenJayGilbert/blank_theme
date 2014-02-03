@@ -109,6 +109,7 @@ function blank_preprocess_page(&$vars, $hook) {
   drupal_add_css($colorbox_path. '/example4/colorbox.css');
   drupal_add_js($colorbox_path. '/jquery.colorbox-min.js');  
   
+  //TODO switch to using pathrules
   if ($vars['node']->title == 'Practitioner Sales page') {
     $path = drupal_get_path('theme', 'blank');
     drupal_add_js($path .'/js/jcountdown/jquery.jcountdown.min.js');
@@ -122,6 +123,15 @@ function blank_preprocess_page(&$vars, $hook) {
   //Don't display the page title   
   unset($vars['title']);  
   $vars['classes'] .= ' '. grs_get_path();
+  
+  //add a simple header on some blank pages
+  $header = '';
+  if ( (arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'preferences' && arg(3) == 'signup')
+       || (pathrules_checkpath('member/thankyou', 'starts')) ) {
+    $header = '<div class="simple-header"><div class="logo"></div></div>';
+  }
+  
+  $vars['header'] = $header;
 }
 
 function blank_clean_css_identifier($identifier, $filter = array(' ' => '-', '_' => '-', '/' => '-', '[' => '-', ']' => '')) {

@@ -1,7 +1,8 @@
-
-.messages{
-  width: 700px;
-  margin: 2em auto;
+/*
+* Colors
+*/
+.teal {
+  color: #2AA4A5;
 }
 
 #cboxOverlay{
@@ -129,7 +130,9 @@ a.button:hover,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0f73e', endColorstr='#9dba30',GradientType=0 ); /* IE6-9 */
 }
 
-.orange-gradient{
+.orange-gradient,
+.group-preferences #edit-submit
+{
   background: #ff9900; /* Old browsers */
   background: -moz-linear-gradient(top,  #ff9900 0%, #d57f00 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9900), color-stop(100%,#d57f00)); /* Chrome,Safari4+ */
@@ -149,6 +152,20 @@ a.button:hover,
 #sb-info {
   background:#000000;
   padding:5px 10px
+}
+/* simple header */
+.simple-header {
+  height: 58px;
+  background: #2AA4A5;
+  border-bottom: solid 4px #D1F93E;  
+  -webkit-box-shadow: 0 3px 1px 0 #949494;
+  box-shadow: 0 3px 1px 0 #949494;  
+}
+
+.simple-header .logo {
+  background: #ffffff url('../images/logo2.png') no-repeat 150px center;
+  height: 58px;
+  width: 355px;
 }
 
 /* member landing page */
@@ -192,4 +209,184 @@ a.button:hover,
   display: inline-block;
 }
 
+.register-text {
+  font-size: 22px;
+  color: #595959;
+  font-weight: bold;
+  text-align: center;
+}
 
+#user-register .form-item {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+#user-register label {
+    color: #999999;
+    float: left;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 6px;
+    padding-right: 10px;
+    text-align: right;
+    width: 210px; 
+}
+
+#user-register input {
+  width: 330px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 16px;
+  border: none;
+  background: #e1e1e1;
+  padding: 0 10px;
+}  
+
+#user-register .password-strength {
+  display: none;
+}
+
+#user-register span.password-confirm {
+  display: block;
+  padding-left: 220px;
+}
+
+#user-register #edit-profile-first-wrapper {
+  margin-top: 40px;
+}
+
+#user-register .form-required {
+  display: none;
+}
+
+#user-register #edit-legal-accept-wrapper label {
+  clear: both;
+  float: none;
+  color: #595959;
+  margin-left: 90px;
+  font-size: 15px;
+}
+
+#user-register #edit-legal-accept-wrapper input {
+  width: auto;
+  height: auto;
+}  
+
+#user-register #edit-submit {
+  display: block;
+  background: #FFC600;
+  font-size: 30px;
+  height: 78px;
+  margin: 20px auto 10px auto;
+  padding: 0;
+}
+
+#user-register .privacy-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #595959;
+}
+
+/* preference page */
+.node-add-preferences-signup {
+  min-width: 852px;
+}
+
+.node-add-preferences-signup #page{
+  background: #F1F1F1;
+}
+
+.node-add-preferences-signup #content-area {
+  padding-bottom: 6em;  
+}
+
+.preferences-wrapper .border {
+  background: #D1F93E;
+}
+
+.preferences-wrapper .preferences {
+}
+
+.preferences-wrapper .preferences .title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: #2CACB1;
+  padding-top: 90px;
+  background: url('../images/member/step-customize.png') center 30px no-repeat;
+}
+
+.preferences-wrapper .preferences .content {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #818181;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 30px 0;
+}
+
+.node-add-preferences-signup #content-area form {
+  width: 832px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.node-add-preferences-signup #content-area .top-header {
+  height: 20px;
+  background: #2AA4A5;
+  border-bottom: 3px solid #D1F93E;
+}
+
+.node-add-preferences-signup #content-area .form-item {
+  margin: 1em 2em;
+}
+
+.node-add-preferences-signup #content-area .group-preferences {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.group-preferences .specify {
+    color: #2AA4A5;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.group-preferences .single-accordion{
+  margin: 1.5em 2em;
+}
+
+.group-preferences .single-accordion .header {
+  background: #E1E1E1;
+  min-height: 4em;
+  cursor: pointer;  
+}
+
+.group-preferences .single-accordion .header .button {
+  font-size: 0.8em;
+  margin: 1.2em 1em;
+  min-width: 13em;
+  text-align: center;
+}
+
+.group-preferences .single-accordion .header span {
+  color: #666666;
+  font-weight: 600;
+  font-size: .95em;
+}
+
+.node-add-preferences-signup #content-area #edit-submit {
+  margin: 1em auto;
+  display: block;
+  font-size: 1.6em;
+}
+
+.node-add-preferences-signup #content-area .form-required {
+  display: none;
+}

@@ -11,7 +11,7 @@ div.status,
 div.warning,
 div.error /* Important messages (status, warning, and error) for the user */ {
   min-height: 21px;
-  margin: 0 1em 5px 1em;
+  margin: 1em auto;
   border: 2px solid #ff7;
   padding: 5px 5px 5px 35px; /* LTR */
   color: #000;
@@ -19,6 +19,7 @@ div.error /* Important messages (status, warning, and error) for the user */ {
   background-image: url(../images/messages-status.png);
   background-repeat: no-repeat;
   background-position: 5px 5px; /* LTR */
+  width: 700px;
 }
 
 div.status /* Normal priority messages */ {
