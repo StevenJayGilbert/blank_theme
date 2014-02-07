@@ -146,7 +146,7 @@ a.button:hover,
 /* contact form */
 #contact-mail-user {
   margin: 2em;
-  max-width: 600px;
+  max-width: 1216px;
 }
 
 #sb-info {
@@ -169,6 +169,11 @@ a.button:hover,
 }
 
 /* member landing page */
+#member-landing {
+  max-width: 1036px;
+  margin: 0 auto;
+}
+
 .member-signup {
   width: 100%;
   height: 800px;
@@ -177,7 +182,13 @@ a.button:hover,
 
 #member-landing .bonus{
   float: left;
-  margin: 150px 10px 50px 50px;
+  margin: 50px 15px 50px 15px;
+  width: 488px
+}
+
+#member-landing .bonus img {
+  margin: 0 auto;
+  display: block;
 }
 
 #member-landing .bonus-list{
@@ -194,9 +205,9 @@ a.button:hover,
 #member-landing .join{
   line-height: 1em;
   float: left;
-  margin: 0 0 0 100px;
-  padding: 2em;
-  width: 600px;
+  margin: 0 15px 0 15px;
+  padding: 10px;
+  width: 468px;
   height: 800px;
   background-color:rgba(256, 256, 256, 0.5)
 }
