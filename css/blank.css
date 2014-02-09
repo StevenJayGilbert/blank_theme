@@ -179,58 +179,6 @@ a.button:hover,
   width: 355px;
 }
 
-/* member landing page */
-#member-landing {
-  max-width: 1036px;
-  margin: 0 auto;
-}
-
-.member-signup {
-  width: 100%;
-  height: 800px;
-  background: url('../images/member/customer-landing-page.jpg') no-repeat;  
-}
-
-#member-landing .bonus{
-  float: left;
-  margin: 50px 5px 50px 5px;
-  width: 488px
-}
-
-#member-landing .bonus img {
-  margin: 0 auto;
-  display: block;
-}
-
-#member-landing .bonus-list{
-  margin: 20px 0 0 20px; 
-} 
-
-#member-landing .bonus-list li {
-  color: #FFFFFF;
-  font-size: 20px;  
-  text-shadow: 1px 1px 2px #111111;
-  margin: .7em 0;
-}
-
-#member-landing .join{
-  line-height: 1em;
-  float: left;
-  margin: 0 5px 0 5px;
-  padding: 10px;
-  width: 468px;
-  height: 800px;
-  background-color:rgba(256, 256, 256, 0.5)
-}
-
-#member-landing .secure {
-  background: url("../images/member/secure.png") no-repeat left center;
-  padding: 0 0 0 40px;
-  text-align: center;
-  line-height: 50px;
-  display: inline-block;
-}
-
 .register-text {
   font-size: 22px;
   color: #595959;
