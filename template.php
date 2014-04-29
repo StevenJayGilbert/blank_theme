@@ -108,15 +108,7 @@ function blank_preprocess_page(&$vars, $hook) {
   $colorbox_path = libraries_get_path('colorbox');
   drupal_add_css($colorbox_path. '/example4/colorbox.css');
   drupal_add_js($colorbox_path. '/jquery.colorbox-min.js');  
-  
-  //TODO switch to using pathrules
-  if ($vars['node']->title == 'Practitioner Sales page') {
-    $path = drupal_get_path('theme', 'blank');
-    drupal_add_js($path .'/js/jcountdown/jquery.jcountdown.min.js');
-    drupal_add_css($path . '/js/jcountdown/jcountdown.css', 'theme');
-    drupal_add_css($path . '/css/practitioner-sales-page.css', 'theme');
-  }
-    
+     
   $vars['scripts'] = drupal_get_js();
   $vars['styles'] = drupal_get_css($css);      
   
