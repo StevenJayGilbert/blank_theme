@@ -262,6 +262,130 @@ a.button:hover,
   color: #595959;
 }
 
+/* pop up */
+
+
+#member-register-popup .form-item{
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+#member-register-popup label{
+    color: #999999;
+    float: left;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 6px;
+    padding-right: 10px;
+    text-align: right;
+    width: 150px; 
+}
+
+#member-register-popup input{
+  width: 300px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 16px;
+  border: none;
+  background: #e1e1e1;
+  padding: 0 10px;
+}  
+
+#member-register-popup .password-strength{
+  display: none;
+}
+
+#member-register-popup span.password-confirm{
+  display: block;
+  padding-left: 220px;
+}
+
+#member-register-popup #edit-profile-first-wrapper,
+#member-register-popup #edit-mail-wrapper,
+#member-register-popup #edit-legal-accept-wrapper,
+#member-register-popup #edit-submit,
+#member-register-popup .privacy-text{
+  margin-right: 20px;
+  float: right;
+  clear: right;
+}
+#member-register-popup #edit-profile-first-wrapper{
+  margin-top: 30px;
+}
+
+#member-register-popup .form-required{
+  display: none;
+}
+
+#member-register-popup #edit-legal-accept-wrapper label{
+  clear: both;
+  float: none;
+  color: #595959;
+  font-size: 15px;
+}
+
+#member-register-popup #edit-legal-accept-wrapper input{
+  width: auto;
+  height: auto;
+}  
+
+#member-register-popup #edit-submit{
+  display: block;
+  background: #FFC600;
+  font-size: 30px;
+  height: 78px;
+  padding: 0;
+}
+ 
+#member-register-popup .privacy-text{
+  text-align: right;
+  font-size: 15px;
+  font-weight: 600;
+  color: #595959;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+
+#member-register-popup #logo {
+display:block;
+margin:20px auto 0 auto;
+width:250px;
+position: relative;
+}
+
+#member-register-popup .presents {
+text-align:center;
+margin:0px;
+}
+
+#member-register-popup h1.LB-heading {
+text-align:center;
+color:#e38a31;
+font-weight:600;
+font-size:40px;
+}
+
+#member-register-popup p.details {
+font-size:15px;
+line-height: 22px;
+padding:0 30px;
+}
+
+#member-register-popup img#welcome-pack {
+width:338px;
+float:left;
+margin-top: 40px;
+margin-left: 20px;
+}
+
+#member-register-popup #edit-legal-accept-wrapper,
+#member-register-popup .privacy-text{
+width: 300px;
+text-align: right;
+}
+
+
 /* preference page */
 .node-add-preferences-signup {
   min-width: 852px;
